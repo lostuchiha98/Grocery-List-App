@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="377dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp">
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="248dp">
+
+            <TextView
+                android:id="@+id/warningmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:padding="15dp"
+                android:text="DELETE ITEM !"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/warningmessage"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="75dp"
+                android:text="YES" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/warningmessage"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="75dp"
+                android:text="NO" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
